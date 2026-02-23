@@ -1,11 +1,11 @@
 # main.py
 
-from menu import menu
+from Menu import Tampilkan_menu
 from input_pesanan import ambil_pesanan
-from pembayaran import proses_pembayaran
+from pembayaran import pembayaran
 
 print("===== SISTEM KASIR RESTORAN AYAM GEPREK =====")
-menu = menu()
+menu = Tampilkan_menu()
 
 i = 0
 
@@ -13,4 +13,4 @@ for item in menu.values():
     i += 1
     print(f"{i}. {item[0]} - Rp {item[1]}")
     
-proses_pembayaran(ambil_pesanan(menu))
+pembayaran(ambil_pesanan(menu))
