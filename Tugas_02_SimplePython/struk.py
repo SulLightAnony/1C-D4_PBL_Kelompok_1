@@ -1,36 +1,38 @@
-#pembuatan struk
-from datetime import datetime
+def struk(pesanan, pembayaran) : 
 
-print("=================================")
-print("        AYAM GEPREK BERKAH")
-print("=================================")
+    #pembuatan struk
+    from datetime import datetime
 
-# Tanggal
-tanggal = datetime.now().strftime("%d-%m-%Y")
-print("Tanggal :", tanggal)
-print("Kasir   : Asep")
+    print("=================================")
+    print("        AYAM GEPREK BERKAH")
+    print("=================================")
 
-print("---------------------------------")
-print("Menu\t\tQty\tSubtotal")
-print("---------------------------------")
+    # Tanggal
+    tanggal = datetime.now().strftime("%d-%m-%Y")
+    print("Tanggal :", tanggal)
+    print("Kasir   : Asep")
 
-# data belanja
-belanja = [
-    ("Ayam Geprek Original", 2, 30000),
-    ("Es Teh", 1, 4000),
-    ("Nasi Putih", 1, 5000)
-]
+    print("---------------------------------")
+    print("Menu\t\tQty\tSubtotal")
+    print("---------------------------------")
 
-total = 0
-for item in belanja:
-    print(f"{item[0]}\t{item[1]}\t{item[2]}")
-    total += item[2]
+    # data belanja
+    belanja = [
+        ("Ayam Geprek Original", 2, 30000),
+        ("Es Teh", 1, 4000),
+        ("Nasi Putih", 1, 5000)
+    ]
 
-print("---------------------------------")
-print("Total\t\t\t", grandtotal)
-print("Bayar\t\t\t", int(pembayaran))
-print("Kembalian\t\t", kembalian)
-print("---------------------------------")
-print("     Terima Kasih :)")
-print("   Selamat Menikmati!")
-print("=================================")
+    total = 0
+    for item in belanja:
+        print(f"{item[0]}\t{item[1]}\t{item[2]}")
+        total += item[2]
+
+    print("---------------------------------")
+    print("Total\t\t\t", grandtotal)
+    print("Bayar\t\t\t", int(pembayaran))
+    print("Kembalian\t\t", kembalian)
+    print("---------------------------------")
+    print("     Terima Kasih :)")
+    print("   Selamat Menikmati!")
+    print("=================================")
