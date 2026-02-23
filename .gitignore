@@ -1,0 +1,15 @@
+# Abaikan folder virtual environment (sangat berat kalau di-upload)
+venv/
+.env
+env/
+
+# Abaikan cache Python (folder __pycache__)
+__pycache__/
+*.pyc
+
+# Abaikan file konfigurasi VS Code pribadi
+.vscode/
+
+# Abaikan file log atau data sensitif
+*.log
+.env.local
