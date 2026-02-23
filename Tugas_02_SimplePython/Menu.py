@@ -11,9 +11,4 @@ def Tampilkan_menu():
         9: ("Teh Hangat", 3000),
         10: ("Air Mineral", 3000)
     }
-    
-    print("\n=== MENU AYAM GEPREK ===")
-    for id_menu, item in menu.items():
-        print(f"{id_menu}. {item[0]} - Rp{item[1]}")
-    
     return menu
