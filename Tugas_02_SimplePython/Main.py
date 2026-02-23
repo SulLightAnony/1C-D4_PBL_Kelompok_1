@@ -1,7 +1,7 @@
 # main.py
 
 from Menu import Tampilkan_menu
-from input_pesanan import ambil_pesanan
+from InputPesanan import ambil_pesanan
 from pembayaran import pembayaran
 
 print("===== SISTEM KASIR RESTORAN AYAM GEPREK =====")
