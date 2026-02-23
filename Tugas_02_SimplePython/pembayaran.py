@@ -5,57 +5,50 @@ def pembayaran(pesanan) :
     for item in pesanan :
         total += item[2]
 
+    print("\nTotal pembelian : Rp ", total)
     while konfirmasi == False : 
-        pembayaran = input("input pembayaran : ")
-        grandtotal = 150000
+        uang_bayar = int(input("input pembayaran : "))
 
-        if int(pembayaran) < total :
+        if uang_bayar < total :
             print("Pembayaran anda kurang!")
-        elif int(pembayaran) == total :
+        elif uang_bayar == total :
             konfirmasi = True
             kembalian = 0;
-            print("Pembayaran anda sebesar ", int(pembayaran), " berhasil!")
+            print("Pembayaran anda sebesar Rp ", uang_bayar, " berhasil!")
             print("Kembalian : Rp ", kembalian)
         else :
             konfirmasi = True
-            kembalian = int(pembayaran) - total
+            kembalian = uang_bayar - total
+            print("Pembayaran anda sebesar ", uang_bayar, " berhasil!")
             print("Kembalian : Rp ", kembalian)
     
  #pembuatan struk
     from datetime import datetime
 
-    print("=================================")
+    print("=" * 40)
     print("        AYAM GEPREK BERKAH")
-    print("=================================")
+    print("=" * 40)
 
     # Tanggal
     tanggal = datetime.now().strftime("%d-%m-%Y")
-    print("Tanggal :", tanggal)
+    print(f"Tanggal : {tanggal}")
     print("Kasir   : Asep")
 
-    print("---------------------------------")
-    print("Menu\t\tQty\tSubtotal")
-    print("---------------------------------")
+    print("-" * 40)
+    print(f"{'Menu':<22}{'Qty':>6}{'Subtotal':>12}")
+    print("-" * 40)
 
     # data belanja
-    belanja = [
-        ("Ayam Geprek Original", 2, 30000),
-        ("Es Teh", 1, 4000),
-        ("Nasi Putih", 1, 5000)
-    ]
+    for nama, qty, subtotal in pesanan:
+        print(f"{nama:<22}{qty:>6}{subtotal:>12}")
 
-    total = 0
-    for item in belanja:
-        print(f"{item[0]}\t{item[1]}\t{item[2]}")
-        total += item[2]
+    print("-" * 40)
+    print(f"{'Total':<28}{total:>12}")
+    print(f"{'Bayar':<28}{uang_bayar:>12}")
+    print(f"{'Kembalian':<28}{kembalian:>12}")
 
-    print("---------------------------------")
-    print("Total\t\t\t", grandtotal)
-    print("Bayar\t\t\t", int(pembayaran))
-    print("Kembalian\t\t", kembalian)
-    print("---------------------------------")
-    print("     Terima Kasih :)")
-    print("   Selamat Menikmati!")
-    print("=================================")
-
-    return total
+    print("-" * 40)
+    print("      Terima Kasih :)")
+    print("    Selamat Menikmati!")
+    print("=" * 40)
+    
