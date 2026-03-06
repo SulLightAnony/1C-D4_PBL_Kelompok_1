@@ -1,0 +1,30 @@
+# Lingkungan Virtual (Virtual Environments)
+# Mengabaikan folder venv di semua level direktori
+**/venv/
+**/env/
+**/ENV/
+
+# Python Cache
+# Mengabaikan file kompilasi Python yang tidak perlu diunggah
+**/__pycache__/
+*.py[cod]
+*$py.class
+
+# Metadata IDE (VS Code)
+.vscode/
+
+# File Driver (Selenium)
+# Agar driver lokal tidak ikut terunggah
+chromedriver.exe
+geckodriver
+**/webdriver/
+
+# Hasil Build (Jika ada)
+dist/
+build/
+*.spec
+
+# File Dataset (Opsional)
+# Jika kamu tidak ingin dataset hasil scraping ikut terunggah
+*.csv
+*.xlsx
