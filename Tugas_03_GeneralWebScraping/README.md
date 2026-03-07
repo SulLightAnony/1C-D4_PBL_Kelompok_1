@@ -38,73 +38,64 @@ Aplikasi ini dibuat menggunakan library **PyQt5** untuk antarmuka, serta **Selen
 
 Pastikan Python sudah terinstall di komputer.
 
-### 1. Clone Repository
+## Panduan Instalasi
 
-```bash
-git clone https://github.com/SulLightAnony/1C-D4_PBL_Kelompok_1.git 
- 
-### 2. Masuk ke folder project
-cd nama-repository
+Pastikan Anda sudah menginstall Python (versi 3.8+) di perangkat Anda.
 
-### 3. Install dependencies
-pip install PyQt5 selenium webdriver-manager dateparser openpyxl
+1.  **Clone Repository**
+    ```bash
+    git clone [https://github.com/SulLightAnony/1C-D4_PBL_Kelompok_1.git](https://github.com/SulLightAnony/1C-D4_PBL_Kelompok_1.git)
+    cd 1C-D4_PBL_Kelompok_1
+    ```
 
-# Cara menjalankan aplikasi
-```bash
-### 1. Jalankan file
-run python main.py
+2.  **Install Dependencies**
+    ```bash
+    pip install PyQt5 selenium webdriver-manager dateparser openpyxl
+    ```
 
-### 2. Masukkan url website berita pada kolom URL
-contoh : detik.com, kompas.com, dsb
+---
 
-### 3. Tentukan jumlah berita yang ingin diambil
+## Cara Menjalankan Aplikasi
 
-### 4. Tentukan rentang tanggal berita menggunakan filter tanggal
+1.  **Eksekusi Program**: Jalankan file utama dengan perintah:
+    ```bash
+    python main.py
+    ```
+2.  **Konfigurasi Scraping**:
+    * Masukkan **URL Website** berita (contoh: `detik.com`, `kompas.com`).
+    * Input **Jumlah Berita** yang ingin diambil.
+    * Atur **Rentang Tanggal** melalui widget kalender/filter yang tersedia.
+3.  **Proses**: Klik tombol **"Mulai Scraping"** dan tunggu hingga progress selesai.
+4.  **Interaksi Hasil**:
+    * **Lihat Konten**: Membuka modal internal untuk membaca teks berita.
+    * **Buka URL**: Mengarahkan langsung ke sumber berita di browser.
+5.  **Penyimpanan**: Pilih opsi **Export CSV** atau **Export Excel** untuk menyimpan data.
 
-### 5. Klik tombol "Mulai Scraping"
+---
 
-### 6. Tunggu hingga proses scraping selesai
+## Struktur Proyek
 
-### 7. Hasil akan muncul pada tabel yang berisi :
-- judul berita
-- tanggal
-- tombol aksi
+| File | Deskripsi |
+| :--- | :--- |
+| `main.py` | **Entry Point**: Inisialisasi dan menjalankan siklus hidup aplikasi. |
+| `gui.py` | **User Interface**: Mengatur layout, widget, dan interaksi pengguna (PyQt5). |
+| `scraper.py` | **Core Engine**: Logika otomasi browser menggunakan Selenium. |
+| `theme.py` | **Styling**: Konfigurasi skema warna Dark Mode dan Light Mode. |
 
-### 8. Pengguna dapat
-- Klik Lihat Konten untuk membaca isi berita
+---
 
-- Klik Buka URL untuk membuka berita di browser
-
-### 9. Setelah scraping selesai, data dapat disimpan menggunakan:
-- Export CSV
-
-- Export Excel
-
-# Struktur Project
-project-folder
-│
-├── main.py        # Entry point aplikasi
-├── gui.py         # Antarmuka aplikasi (GUI)
-├── scraper.py     # Proses scraping menggunakan Selenium
-├── theme.py       # Tema tampilan dark & light
-└── README.md
-
---- 
-# Preview Tampilan
+## Preview Tampilan
 
 ### Tampilan Utama
 ![Tampilan Utama](preview/tampilan-utama.png)
 
-### Proses Scraping
-![Proses Scraping](preview/proses-scraping.png)
-
-### Hasil Scraping
-![Hasil Scraping](preview/hasil-scraping.png)
 
 ---
 
-# Author 
-Project ini dibuat oleh Kelompok C1 
+## Kontributor
+**Kelompok C1 - D4 Teknik Informatika**
 ---
-#Lisensi
-Project ini dibuat untuk keperluan pembelajaran dan tugas akademik.
+
+## Lisensi & Catatan
+Project ini dikembangkan untuk keperluan 
+**pembelajaran dan tugas akademik (PBL)**. Dilarang menyalahgunakan alat ini untuk aktivitas yang melanggar kebijakan *terms of service* dari situs berita terkait.
