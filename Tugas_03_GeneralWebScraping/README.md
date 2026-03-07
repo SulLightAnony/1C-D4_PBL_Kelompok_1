@@ -41,8 +41,9 @@ Pastikan Python sudah terinstall di komputer.
 ### 1. Clone Repository
 
 ```bash
+```
 git clone https://github.com/SulLightAnony/1C-D4_PBL_Kelompok_1.git 
- 
+---
 ### 2. Masuk ke folder project
 cd nama-repository
 
