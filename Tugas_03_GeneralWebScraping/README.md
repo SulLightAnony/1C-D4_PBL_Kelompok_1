@@ -77,6 +77,7 @@ Pastikan Anda sudah menginstall Python (versi 3.8+) di perangkat Anda.
 | `gui.py` | **User Interface**: Mengatur layout, widget, dan interaksi pengguna (PyQt5). |
 | `scraper.py` | **Core Engine**: Logika otomasi browser menggunakan Selenium. |
 | `theme.py` | **Styling**: Konfigurasi skema warna Dark Mode dan Light Mode. |
+| `Icons` | **Assets**: Direktori untuk menyimpan file gambar/ikon |
 
 ---
 
