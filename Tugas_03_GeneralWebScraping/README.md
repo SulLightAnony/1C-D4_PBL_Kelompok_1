@@ -34,17 +34,13 @@ Aplikasi ini dibuat menggunakan library **PyQt5** untuk antarmuka, serta **Selen
 
 ---
 
-# Cara Instalasi
-
-Pastikan Python sudah terinstall di komputer.
-
 ## Panduan Instalasi
 
 Pastikan Anda sudah menginstall Python (versi 3.8+) di perangkat Anda.
 
 1.  **Clone Repository**
     ```bash
-    git clone [https://github.com/SulLightAnony/1C-D4_PBL_Kelompok_1.git](https://github.com/SulLightAnony/1C-D4_PBL_Kelompok_1.git)
+    git clone https://github.com/SulLightAnony/1C-D4_PBL_Kelompok_1.git
     cd 1C-D4_PBL_Kelompok_1
     ```
 
@@ -81,6 +77,7 @@ Pastikan Anda sudah menginstall Python (versi 3.8+) di perangkat Anda.
 | `gui.py` | **User Interface**: Mengatur layout, widget, dan interaksi pengguna (PyQt5). |
 | `scraper.py` | **Core Engine**: Logika otomasi browser menggunakan Selenium. |
 | `theme.py` | **Styling**: Konfigurasi skema warna Dark Mode dan Light Mode. |
+| `Icons` | **Assets**: Direktori untuk menyimpan file gambar/ikon |
 
 ---
 
