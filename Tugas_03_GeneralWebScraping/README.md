@@ -38,20 +38,16 @@ Aplikasi ini dibuat menggunakan library **PyQt5** untuk antarmuka, serta **Selen
 
 Pastikan Anda sudah menginstall Python (versi 3.8+) di perangkat Anda.
 
-1.  **Clone Repository**
-    ```bash
-    git clone https://github.com/SulLightAnony/1C-D4_PBL_Kelompok_1.git
-    cd 1C-D4_PBL_Kelompok_1
-    ```
+### 1. Clone Repository
 
-2.  **Install Dependencies**
-    ```bash
-    pip install PyQt5 selenium webdriver-manager dateparser openpyxl
-    ```
+```bash
+git clone https://github.com/SulLightAnony/1C-D4_PBL_Kelompok_1.git 
+ 
+### 2. Masuk ke folder project
+cd nama-repository
 
----
-
-## Cara Menjalankan Aplikasi
+### 3. Install dependencies
+pip install PyQt5 selenium webdriver-manager dateparser openpyxl
 
 1.  **Eksekusi Program**: Jalankan file utama dengan perintah:
     ```bash
