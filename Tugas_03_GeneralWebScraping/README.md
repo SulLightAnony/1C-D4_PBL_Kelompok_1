@@ -1,9 +1,5 @@
 # General News Scraper
 
-<p align="center">
-  <img src="preview/tampilan-utama.png" width="700"/>
-</p>
-
 **General News Scraper** adalah aplikasi desktop berbasis Python untuk melakukan scraping berita secara otomatis dari situs berita.
 
 Aplikasi ini menyediakan GUI yang memudahkan pengguna untuk:
