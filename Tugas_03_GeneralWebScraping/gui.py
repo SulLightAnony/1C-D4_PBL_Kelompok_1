@@ -1,8 +1,8 @@
 import csv
 from datetime import datetime
 from PyQt5.QtWidgets import QMainWindow, QWidget, QVBoxLayout, QHBoxLayout, QLineEdit, QPushButton, QTableWidget, QTableWidgetItem, QProgressBar, QLabel, QDateEdit, QFileDialog, QSpinBox, QMessageBox, QGroupBox, QHeaderView, QDialog, QTextEdit, QSizePolicy
-from PyQt5.QtCore import QDate, Qt, QUrl, QTimer
-from PyQt5.QtGui import QDesktopServices
+from PyQt5.QtCore import QDate, Qt, QUrl, QTimer, QSize
+from PyQt5.QtGui import QDesktopServices, QIcon
 from scraper import ScraperThread
 from theme import MODERN_DARK_THEME, MODERN_LIGHT_THEME
 
@@ -25,7 +25,11 @@ class MainWindow(QMainWindow):
         layout_top.addWidget(self.lbl_project)
         
         layout_top.addStretch()
-        self.btn_theme = QPushButton("Ganti Tema Terang")
+        self.btn_theme = QPushButton()
+        self.btn_theme.setIcon(QIcon("Icons/sun.png")) 
+        self.btn_theme.setIconSize(QSize(30, 30)) 
+        self.btn_theme.setFixedSize(40, 40) 
+        self.btn_theme.setToolTip("Ganti ke Tema Terang") 
         self.btn_theme.clicked.connect(self.toggle_theme)
         layout_top.addWidget(self.btn_theme)
         
@@ -110,11 +114,11 @@ class MainWindow(QMainWindow):
         self.is_dark_theme = not self.is_dark_theme
         if self.is_dark_theme:
             self.setStyleSheet(MODERN_DARK_THEME)
-            self.btn_theme.setText("Ganti Tema Terang")
+            self.btn_theme.setIcon(QIcon("Icons/sun.png"))
             self.lbl_project.setStyleSheet("font-weight: bold; color: white;")
         else:
             self.setStyleSheet(MODERN_LIGHT_THEME)
-            self.btn_theme.setText("Ganti Tema Gelap")
+            self.btn_theme.setIcon(QIcon("Icons/moon.png"))
             self.lbl_project.setStyleSheet("font-weight: bold; color: black;")
 
     def start_scraping(self):
